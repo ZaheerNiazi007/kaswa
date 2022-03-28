@@ -1,0 +1,27 @@
+{
+  "homepage": "http://ZaheerNiazi007.github.io/kaswa",
+  "name": "bery-real-estate",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix Kaswa-Template-main npm && npm run build --prefix Kaswa-Template-main"
+  },
+  "dependencies": {
+    "bootstrap": "^5.1.3",
+    "next": "12.1.0",
+    "react": "17.0.2",
+    "react-bootstrap": "^2.2.1",
+    "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "eslint": "8.11.0",
+    "eslint-config-next": "12.1.0",
+    "gh-pages": "^3.2.3"
+  }
+}
